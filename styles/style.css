@@ -234,3 +234,13 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}

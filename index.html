@@ -4,14 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elisabeth Winter - Porfolio</title>
+    <title>Elisabeth Winter - Portfolio</title>
 
     <link rel="stylesheet" href="./styles/style.css">
+    
 
   </head> <!-- end of head -->
 
-  <body>
-    
+  <body> 
+
+    <header id="home">
+      <div class="header-container wrapper">
+        
+        <nav class="headerNav">
+          <img class="LOGO" src="LOGO" alt="LOGO">
+          <ul class="navBar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul> <!-- end of Nav Bar-->
+        </nav> <!-- end of headerNav -->
+        
+        <div class="headerText">
+          <h1>Hi! I'm Elisabeth Winter</h1>
+          <h2>I am a Front-End Developer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ut iusto dolorem tempora explicabo enim modi facilis maxime ad blanditiis, dolores consequatur porro ex sapiente veniam laborum libero quam deleniti in. Ullam iste eveniet architecto quae quibusdam omnis maxime, totam ut at est harum sed quaerat animi, accusamus perferendis nemo.</p>
+        </div> <!-- end of headerText-->
+
+        <div class="headerPortrait">
+          <img src="PORTRAIT" alt="Vector Drawing of Me! Elisabeth Winter">
+        </div> <!-- end of headerPortrait-->
+
+      </div><!-- end of headerContainer-->
+    </> <!-- end of header -->
+
+    <main>
+
+      <section class="about wrapper" id="about">
+        <div class="aboutText">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quod saepe pariatur nesciunt modi quasi, ea temporibus dolorum excepturi ab reprehenderit eveniet, necessitatibus numquam iste nobis ut rem, officiis culpa aliquam laborum eligendi consectetur incidunt corrupti? Sunt iste inventore, recusandae quo neque minus labore explicabo itaque ut est, repellendus tempore!</p>
+          <button>Contact</button>
+        </div> <!-- end of aboutText-->
+
+        <div class="aboutPortrait">
+          <img src="PORTRAIT2" alt="Vector Drawing of Elisabeth Winter, Again">
+        </div> <!-- end of aboutPortrait-->
+      </section> <!-- end of about-->
+
+      <section class="portfolio wrapper" id="portfolio">
+        <h2>My recent Projects</h2>
+        <ul class="projectList">
+          <li class="projectContainer">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, velit illum labore molestiae suscipit voluptate repellat nesciunt quasi consequuntur perferendis ipsam, in cum possimus recusandae!</p>
+            <img src="https://placekitten.com/g/500/500" alt="">
+          </li> <!--end of projectContainer-->
+          <li class="projectContainer">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, velit illum labore molestiae suscipit voluptate repellat nesciunt quasi consequuntur perferendis ipsam, in cum possimus recusandae!</p>
+            <img src="https://placekitten.com/g/500/500" alt="">
+          </li> <!--end of projectContainer-->
+          <li class="projectContainer">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, velit illum labore molestiae suscipit voluptate repellat nesciunt quasi consequuntur perferendis ipsam, in cum possimus recusandae!</p>
+            <img src="https://placekitten.com/g/500/500" alt="">
+          </li> <!--end of projectContainer-->
+          <li class="projectContainer">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, velit illum labore molestiae suscipit voluptate repellat nesciunt quasi consequuntur perferendis ipsam, in cum possimus recusandae!</p>
+            <img src="https://placekitten.com/g/500/500" alt="">
+          </li>   <!--end of projectContainer-->
+        </ul>     <!-- end of projectList-->
+      </section> <!-- end of portfolio-->
+
+
+      
+      
+      
+      <section class="blog wrapper" id="blog">
+        <h2>Latest Blog Posts!</h2>
+        <div id="medium-widget"></div>
+      </section> <!-- end of blog -->
+
+      <section class="testimonials wrapper" id="testimonials">
+        <h3>What they are saying about Me</h3>
+        <ul class="testimonyList wrapper">
+          <li class="testimonyPost">
+            <img src="https://placekitten.com/g/100/100" alt="">
+            <p>Elisabeth is the Shiznit!</p>
+          </li>         <!--end of testimonyPost-->
+        </ul>       <!-- end of testimonyList-->
+      </section> <!-- end of testimonials -->
+
+      <section class="contact wrapper" id="contact">
+        <form action="submit" class="contactForm">
+          <label for="name" class="sr-only">Your Name</label>
+          <input type="text" name="name" placeholder="Name*" required>
+          <label for="email" class="sr-only">Your Email Address</label>
+          <input type="email" name="email" placeholder="Email*" required>
+          <label for="message" class="sr-only"></label>
+          <textarea name="message" id="message" placeholder="Send me a message!" required></textarea>
+        </form> <!--end of contactForm-->
+        <button>Send Message</button>
+      </section> <!-- end of contact -->
+
+      <nav class="bottomNav">
+        <ul class="bottomNavMenu">
+          <li>
+            <a href="gitHub">My Github</a>
+          </li>
+          <li>
+            <a href="linkedIn">My LinkedIn</a>
+          </li>
+          <li>
+            <p>My Phone Number</p>
+          </li>
+          <li>
+            <p>My Social Media</p>
+          </li>
+        </ul> <!--end of bottomNavMenu-->
+      </nav> <!-- end of bottomNav-->
+
+    </main> <!-- end of main-->
+
+
+
+    <footer>
+      <div class="footerContent wrapper">
+        <p>Copyright Elisabeth Winter 2021</p>
+      </div> <!-- end of footerContent-->
+    </footer> <!-- end of footer-->
 
   </body> <!-- end of body-->
+
+  <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+  <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@elisabethwinter.writes","postsPerLine":3,"limit":3,"picture":"small","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+  <script src="./scripts/scripts.js"></script>
+
 </html>
