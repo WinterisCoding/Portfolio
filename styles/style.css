@@ -235,6 +235,11 @@ html {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 li {
   list-style: none;
 }
@@ -243,4 +248,152 @@ li {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  background-color: lightgray;
+}
+
+.headerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headerText {
+  width: 50%;
+  padding: 100px;
+}
+
+.headerPortrait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2%;
+}
+
+.aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aboutPortrait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.aboutText {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutText button {
+  width: 200px;
+}
+
+.portfolio {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.projectList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projectOne,
+.projectFour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+  width: 60%;
+}
+.projectOne img,
+.projectFour img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projectTwo,
+.projectThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+  width: 40%;
+}
+.projectTwo img,
+.projectThree img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.overlayOne {
+  position: absolute;
 }

@@ -1,0 +1,41 @@
+.portfolio {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectOne,
+.projectFour {
+  display: flex;
+  max-height: 400px;
+  justify-content: center;
+  padding: 1%;
+  width: 60%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+}
+
+
+
+.projectTwo,
+.projectThree {
+  display: flex;
+  max-height: 400px;
+  justify-content: center;
+  padding: 1%;
+  width: 40%;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.overlayOne {
+  position: absolute;
+}

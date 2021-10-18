@@ -1,0 +1,31 @@
+header {
+  background-color: lightgray;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.navBar {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.headerContent {
+  display: flex;
+}
+
+.headerText {
+  width: 50%;
+  padding: 100px;
+}
+
+.headerPortrait {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
