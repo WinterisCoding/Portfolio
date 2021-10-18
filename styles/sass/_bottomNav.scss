@@ -1,0 +1,11 @@
+.bottomNav {
+  background-color: darkslategrey;
+  display: flex;
+}
+
+.bottomNavMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center ;
+  height: 250px;
+}

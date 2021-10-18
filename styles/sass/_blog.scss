@@ -1,0 +1,17 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 4%;
+  background-color: lightgray;
+}
+
+.widgetContainer  {
+  display: flex;
+  justify-content: center;
+}
+
+#medium-widget {
+  width: 25%;
+  text-align: left;
+}

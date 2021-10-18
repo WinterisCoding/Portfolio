@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elisabeth Winter Portfolio</title>
+    
 
     <script src="https://kit.fontawesome.com/bd8b2c5aeb.js" crossorigin="anonymous"></script>
 
+    <link rel="shortcut icon" href="http://example.com/favicon.ico">
     <link rel="stylesheet" href="./styles/style.css">
 
   </head> <!-- end of head -->
@@ -17,7 +19,7 @@
     <header id="home">
       <div class="header-container wrapper">
         <nav class="headerNav">
-          <img class="LOGO" src="LOGO" alt="LOGO">
+          <img class="logo" src="" alt="LOGO">
           <ul class="navBar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -56,7 +58,10 @@
             <h2>About Me</h2>
             <h4>Front-End Developer</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quod saepe pariatur nesciunt modi quasi, ea temporibus dolorum excepturi ab reprehenderit eveniet, necessitatibus numquam iste nobis ut rem, officiis culpa aliquam laborum eligendi consectetur incidunt corrupti? Sunt iste inventore, recusandae quo neque minus labore explicabo itaque ut est, repellendus tempore!</p>
-            <button>Contact</button>
+            <div class="buttonContainer">
+              <button>Contact</button>
+              <button>Resume</button>
+            </div>
           </div> <!-- end of aboutText-->
         </div> <!-- end of aboutContent-->
       </section> <!-- end of about-->
@@ -74,7 +79,7 @@
               <button>Live</button>
               <button>Repo</button>
             </div><!-- end of overlayOne-->
-            <img class="projectImage" src="https://placekitten.com/g/500/500" alt="">
+            <img class="projectImage" src="https://placekitten.com/g/500/500" alt="1">
           </li> <!--end of projectOne-->
           <li class="projectTwo">
             <div class="overlayOne hidden">
@@ -84,7 +89,7 @@
               <button>Live</button>
               <button>Repo</button>
             </div><!-- end of overlayOne-->
-            <img src="https://placekitten.com/g/300/200" alt="">
+            <img class="projectImage" src="https://placekitten.com/g/300/200" alt="2">
           </li> <!--end of projectOne-->
           <li class="projectThree">
             <div class="overlayOne hidden">
@@ -94,7 +99,7 @@
               <button>Live</button>
               <button>Repo</button>
             </div><!-- end of overlayOne-->
-            <img src="https://placekitten.com/g/400/400" alt="">
+            <img class="projectImage" src="https://placekitten.com/g/400/400" alt="3">
           </li> <!--end of projectOne-->
           <li class="projectFour">
             <div class="overlayFour hidden">
@@ -104,27 +109,31 @@
               <button>Live</button>
               <button>Repo</button>
             </div><!-- end of overlayFour-->
-            <img src="https://placekitten.com/g/600/600" alt="">
+            <img class="projectImage" src="https://placekitten.com/g/600/600" alt="4">
           </li> <!--end of projectFour-->
         </ul>     <!-- end of projectList-->
       </section> <!-- end of portfolio-->
       
       <section class="blog wrapper" id="blog">
-        <h2>Latest Blog Posts!</h2>
-        <div id="medium-widget"></div>
+        <h2>Blog</h2>
+        <div class="widgetContainer">
+          <div class='MediumWidget'id="medium-widget"></div>
+        </div> <!--end of widgetContainer -->
       </section> <!-- end of blog -->
 
-      <section class="testimonials wrapper" id="testimonials">
-        <h3>What they are saying about Me</h3>
-        <ul class="testimonyList wrapper">
-          <li class="testimonyPost">
-            <img src="https://placekitten.com/g/100/100" alt="">
-            <p>Elisabeth is the Shiznit!</p>
-          </li>         <!--end of testimonyPost-->
-        </ul>       <!-- end of testimonyList-->
+      <section class="testimonials" id="testimonials">
+        <div class="testimonialsContainer wrapper">
+          <ul class="testimonyList wrapper">
+            <li class="testimonyPost">
+              <img src="https://placekitten.com/g/100/100" alt="">
+              <blockquote>"Elisabeth is the Shiznit!"</blockquote>
+            </li>           <!--end of testimonyPost-->
+          </ul>         <!-- end of testimonyList-->
+        </div><!-- end of testimonialsContainer-->
       </section> <!-- end of testimonials -->
 
       <section class="contact wrapper" id="contact">
+        <h2>Get in Touch</h2>
         <form action="submit" class="contactForm">
           <label for="name" class="sr-only">Your Name</label>
           <input type="text" name="name" placeholder="Name*" required>
@@ -137,7 +146,7 @@
       </section> <!-- end of contact -->
 
       <nav class="bottomNav">
-        <ul class="bottomNavMenu">
+        <ul class="bottomNavMenu wrapper">
           <li>
             <a href="gitHub">My Github</a>
           </li>
@@ -152,19 +161,17 @@
           </li>
         </ul> <!--end of bottomNavMenu-->
       </nav> <!-- end of bottomNav-->
-
     </main> <!-- end of main-->
-
 
 
     <footer>
       <div class="footerContent wrapper">
-        <p>Copyright Elisabeth Winter 2021</p>
+        <p>Designed and Developed by Elisabeth Winter © 2021</p>
       </div> <!-- end of footerContent-->
     </footer> <!-- end of footer-->
     
     <script src="./scripts/scripts.js"></script>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@elisabethwinter.writes","postsPerLine":3,"limit":3,"picture":"small","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@elisabethwinter.writes","postsPerLine":3,"limit":3,"picture":"big","fields":["description","publishAt"],"ratio":"square"}})</script>
   </body> <!-- end of body-->
 </html>
