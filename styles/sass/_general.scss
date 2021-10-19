@@ -7,9 +7,22 @@ li {
   list-style: none;
 }
 
-// img {
-//   width: 100%;
-// }
+button {
+  border-style: none;
+  background-color: $heroGreen;
+  border-radius: 25px;
+  padding: 12px 30px;
+  color: white;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  font-size: 1.2rem;
+}
+
+button:focus,
+button:hover {
+  box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+  transform: scale(1.015);
+  transition: ease-in-out 0.5s;
+}
 
 .wrapper {
   width: 90%;

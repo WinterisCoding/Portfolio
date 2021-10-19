@@ -244,6 +244,27 @@ li {
   list-style: none;
 }
 
+button {
+  border-style: none;
+  background-color: #1c5c42;
+  border-radius: 25px;
+  padding: 12px 30px;
+  color: white;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  font-size: 1.2rem;
+}
+
+button:focus,
+button:hover {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+          box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1440px;
@@ -255,7 +276,7 @@ li {
 }
 
 header {
-  background-color: lightgray;
+  background-color: #f9f9f9;
 }
 
 .headerNav {
@@ -302,6 +323,47 @@ header {
   width: 50%;
 }
 
+.skillsContent {
+  text-align: center;
+  padding: 5%;
+}
+.skillsContent h2 {
+  margin-top: -1%;
+  margin-bottom: 5%;
+}
+
+.iconList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  padding-top: 2%;
+}
+.iconContainer i,
+.iconContainer img {
+  height: 60px;
+  font-size: 4rem;
+  color: #263547;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,6 +373,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2%;
+  background-color: #f9f9f9;
 }
 
 .aboutContent {
@@ -366,7 +429,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1%;
+  padding: 2%;
   width: 60%;
 }
 .projectOne img,
@@ -374,6 +437,19 @@ header {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+}
+.projectOne :focus,
+.projectOne :hover,
+.projectFour :focus,
+.projectFour :hover {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+          box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 .projectTwo,
@@ -385,7 +461,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1%;
+  padding: 2%;
   width: 40%;
 }
 .projectTwo img,
@@ -393,6 +469,19 @@ header {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+}
+.projectTwo :focus,
+.projectTwo :hover,
+.projectThree :focus,
+.projectThree :hover {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+          box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 .overlayOne {
@@ -408,8 +497,8 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-bottom: 4%;
-  background-color: lightgray;
+  padding-bottom: 4%;
+  background-color: #f9f9f9;
 }
 
 .widgetContainer {
@@ -427,8 +516,9 @@ header {
 }
 
 .testimonials {
-  background-color: darkslategrey;
-  height: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(../assets/forest.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7)), url(../assets/forest.jpg);
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,6 +533,12 @@ header {
 .testimonialsContainer {
   text-align: center;
   padding: 2%;
+  color: white;
+  font-size: 2rem;
+}
+.testimonialsContainer img {
+  border-radius: 80px;
+  width: 100px;
 }
 
 .contact {
@@ -495,7 +591,7 @@ header {
 }
 
 .bottomNav {
-  background-color: darkslategrey;
+  background-color: #153b2c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,6 +608,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 250px;
+  color: white;
+}
+
+footer {
+  background-color: #153b2c;
+  color: white;
 }
 
 .footerContent {

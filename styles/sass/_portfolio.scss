@@ -14,11 +14,18 @@
   display: flex;
   max-height: 400px;
   justify-content: center;
-  padding: 1%;
+  padding: 2%;
   width: 60%;
     img {
       width: 100%;
       object-fit: cover;
+      box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    }
+    :focus,
+    :hover {
+      box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+      transform: scale(1.015);
+      transition: ease-in-out 0.5s;
     }
 }
 
@@ -27,11 +34,18 @@
   display: flex;
   max-height: 400px;
   justify-content: center;
-  padding: 1%;
+  padding: 2%;
   width: 40%;
   img {
     width: 100%;
     object-fit: cover;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  }
+  :focus,
+  :hover {
+    box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
+    transform: scale(1.015);
+    transition: ease-in-out 0.5s;
   }
 }
 

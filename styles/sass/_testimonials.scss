@@ -1,6 +1,8 @@
 .testimonials {
-  background-color: darkslategrey;
-  height: 400px;
+  background: 
+    linear-gradient(rgba(0, 0, 0, .7)),
+    url(../assets/forest.jpg);
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,4 +11,10 @@
 .testimonialsContainer {
   text-align: center;
   padding: 2%;
+  color: white;
+  font-size: 2rem;
+  img {
+    border-radius: 80px;
+    width: 100px;
+  };
 }

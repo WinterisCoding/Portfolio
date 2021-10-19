@@ -13,7 +13,7 @@ portfolioApp.submitForm = () => {
 portfolioApp.showInfo = () => {
   for (let i =0; i < portfolioApp.projectImage.length; i++){
     portfolioApp.projectImage[i].addEventListener('click', function(event){
-      console.log(event.target)
+      console.log(event.target.parentNode)
     })
   }
   ;
