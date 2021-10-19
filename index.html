@@ -9,6 +9,11 @@
 
     <script src="https://kit.fontawesome.com/bd8b2c5aeb.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/style.css">
 
   </head> <!-- end of head -->
@@ -30,15 +35,17 @@
         <div class="headerContent">
           <div class="headerText">
             <h1>Hi! I'm Elisabeth Winter</h1>
-            <h2>I am a Front-End Developer</h2>
+            <h2>Junior Front-End Developer</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ut iusto dolorem tempora explicabo enim modi facilis maxime ad blanditiis, dolores consequatur porro ex sapiente veniam laborum libero quam deleniti in. Ullam iste eveniet architecto quae quibusdam omnis maxime, totam ut at est harum sed quaerat animi, accusamus perferendis nemo.</p>
-            <a href="https://github.com/WinterisCoding"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/winteriscoding/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/_WinterIsCoding"><i class="fab fa-twitter"></i></a>
+            <div class="linkContainer">
+              <a href="https://github.com/WinterisCoding"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/winteriscoding/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/_WinterIsCoding"><i class="fab fa-twitter"></i></a>
+            </div> <!--end of link container-->
           </div> <!-- end of headerText-->
   
           <div class="headerPortrait">
-            <img src="./assets/avaclear.png" alt="Vector Drawing of Me! Elisabeth Winter">
+            <img src="./assets/headerPortrait.svg" alt="Vector Drawing of Me! Elisabeth Winter">
           </div> <!-- end of headerPortrait-->
         </div> <!-- end of headerContent-->
 
@@ -95,7 +102,7 @@
               <p>Pair/Group Programming</p>
             </li> <!--end of iconContainer-->
             <li class="iconContainer">
-              <img src="./assets/firebase-512.webp" aria-hidden="true">
+              <img src="./assets/icons8-firebase.svg" aria-hidden="true">
               <p>Firebase 9</p>
             </li> <!--end of iconContainer-->
           </ul>
@@ -105,7 +112,7 @@
       <section class="about" id="about">
         <div class="aboutContent wrapper">
           <div class="aboutPortrait">
-            <img src="./assets/avaclear.png" alt="Vector Drawing of Elisabeth Winter, Again">
+            <img src="./assets/headerPortrait.svg" alt="Vector Drawing of Elisabeth Winter, Again">
           </div> <!-- end of aboutPortrait-->
           <div class="aboutText">
             <h2>About Me</h2>
@@ -120,47 +127,58 @@
       </section> <!-- end of about-->
 
       <section class="portfolio wrapper" id="portfolio">
-        <p>Creative</p>
+        <h4>Creative</h4>
         <h2>Portfolio</h2>
         <ul class="projectList">
           <li class="projectOne" >
-            <div class="overlay hidden">
+            <div class="overlay">
               <i class="fas fa-times closeButton"></i>
               <h4>Hue are You?</h4>
               <p>Hue are you is a react app I created in a team of four which utilizes the Makeup and Rijsmuseum API's to help the user find paintings that matches colours from their favourite makeup brand</p>
               <p>JSX React CSS Group Programming</p>
-              <button>Live</button>
-              <button>Repo</button>
+              <div class="linkBox">
+                <a href="https://makeup-to-art.netlify.app/">Live</a>
+                <a href="https://github.com/makeup-to-art/makeup-to-art">Repo</a>
+              </div><!--end of linkBox-->
             </div><!-- end of overlayOne-->
             <img class="projectImage" src="./assets/HueAreYou.PNG" alt="Hue Are You Project Displayed on Screen" tabindex="0">
           </li> <!--end of projectOne-->
           <li class="projectTwo">
-            <div class="overlay hidden">
+            <div class="overlay">
+              <i class="fas fa-times closeButton"></i>
               <h4>Hero's Journey</h4>
               <p>The Hero's Journey App allows guides the user through writing a hero's journey in 12 steps using their choice of example text and storing their journey in Firebase</p>
               <p>JSX React CSS Netlify Firebase</p>
-              <button>Live</button>
-              <button>Repo</button>
-            </div><!-- end of overlayOne-->
+              <div class="linkBox">
+                <a href="https://hero-journey-app.netlify.app/">Live</a>
+                <a href="https://github.com/WinterisCoding/Heros-Journey-App">Repo</a>
+              </div><!--end of linkBox-->
+            </div><!-- end of overlay-->
             <img class="projectImage" src="./assets/HeroApp.PNG" alt="Hero's Journey App Displayed on Phone" tabindex="0">
-          </li> <!--end of projectOne-->
+          </li> <!--end of projectTwo-->
           <li class="projectThree">
-            <div class="overlay hidden">
+            <div class="overlay">
+              <i class="fas fa-times closeButton"></i>
               <h4>PocketBooks</h4>
               <p>Pocket Books utilizes multiple endpoints from the OpenLibrary API to fetch books by catagory for the user and displays info about each book.</p>
               <p>JavaScript HTML CSS API</p>
-              <button>Live</button>
-              <button>Repo</button>
+              <div class="linkBox">
+                <a href="https://blueberry-hamster-organization.github.io/Pocket-Books-App/">Live</a>
+                <a href="https://github.com/Blueberry-Hamster-Organization/Pocket-Books-App">Repo</a>
+              </div><!--end of linkBox-->
             </div><!-- end of overlay-->
             <img class="projectImage" src="./assets/pocketBooks.PNG" alt="PocketBooks app Display on Tablet" tabindex="0">
           </li> <!--end of projectThree-->
           <li class="projectFour">
-            <div class="overlay hidden">
+            <div class="overlay">
+              <i class="fas fa-times closeButton"></i>
               <h4>Planted</h4>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, velit illum labore molestiae suscipit voluptate repellat nesciunt quasi consequuntur perferendis ipsam, in cum possimus recusandae!</p>
               <p>HTML CSS Responsive JavaScript</p>
-              <button>Live</button>
-              <button>Repo</button>
+              <div class="linkBox">
+                <a href="https://winteriscoding.github.io/Planted-PSD-Conversion/">Live</a>
+                <a href="https://github.com/WinterisCoding/Planted-PSD-Conversion">Repo</a>
+              </div><!--end of linkBox-->
             </div><!-- end of overlay-->
             <img class="projectImage" src="./assets/planted.PNG" alt="Planeted Project displayed on Laptop" tabindex="0">
           </li> <!--end of projectFour-->
@@ -169,6 +187,7 @@
       
       <section class="blog" id="blog">
         <div class="blogContent wrapper">
+          <h4>Explore</h4>
           <h2>Blog</h2>
           <div class="widgetContainer">
             <div class='MediumWidget'id="medium-widget"></div>
@@ -180,7 +199,7 @@
         <div class="testimonialsContainer wrapper">
           <ul class="testimonyList wrapper">
             <li class="testimonyPost">
-              <img src="https://placekitten.com/g/100/100" alt="">
+              <img src="https://placekitten.com/g/200/200" alt="">
               <blockquote>"Elisabeth is the Shiznit!"</blockquote>
             </li>           <!--end of testimonyPost-->
           </ul>         <!-- end of testimonyList-->
@@ -188,12 +207,17 @@
       </section> <!-- end of testimonials -->
 
       <section class="contact wrapper" id="contact">
+        <h4>Let's chat</h4>
         <h2>Get in Touch</h2>
         <form action="submit" class="contactForm">
-          <label for="name" class="sr-only">Your Name</label>
-          <input type="text" name="name" placeholder="Name*" required>
-          <label for="email" class="sr-only">Your Email Address</label>
-          <input type="email" name="email" placeholder="Email*" required>
+          <div class="input">
+            <label for="name">Please enter your name</label>
+            <input type="text" name="name" placeholder="Name*" required>
+          </div>
+          <div class="input">
+            <label for="email">Please enter your Email Address</label>
+            <input type="email" name="email" placeholder="Email*" required>
+          </div>
           <label for="message" class="sr-only"></label>
           <textarea name="message" id="message" placeholder="Send me a message!" required></textarea>
           <button>Send Message</button>
@@ -203,16 +227,22 @@
       <nav class="bottomNav">
         <ul class="bottomNavMenu wrapper">
           <li>
-            <a href="gitHub">My Github</a>
+            <h3>Github</h3>
+            <a href="https://github.com/WinterisCoding">@WinterisCoding</a>
           </li>
           <li>
-            <a href="linkedIn">My LinkedIn</a>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/winteriscoding/">/in/winteriscoding</a>
           </li>
           <li>
-            <p>My Phone Number</p>
+            <h3>Reach Me</h3>
+            <p>415.570.1286</p>
+            <p>elisabeth@winteriscoding.ca</p>
           </li>
           <li>
-            <p>My Social Media</p>
+            <h3>Social</h3>
+            <a href="https://twitter.com/_WinterIsCoding">Twitter</a>
+            <a href="https://www.instagram.com/elisabeth_winter/">Instagram</a>
           </li>
         </ul> <!--end of bottomNavMenu-->
       </nav> <!-- end of bottomNav-->

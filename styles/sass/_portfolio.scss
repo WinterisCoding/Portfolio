@@ -7,48 +7,75 @@
 .projectList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .projectOne,
 .projectFour {
   display: flex;
-  max-height: 400px;
+  position: relative;
+  height: 400px;
   justify-content: center;
-  padding: 2%;
-  width: 60%;
+  margin-bottom: 40px;
+  width: 58%;
     img {
       width: 100%;
       object-fit: cover;
       box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
-    }
-    :focus,
-    :hover {
-      box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
-      transform: scale(1.015);
-      transition: ease-in-out 0.5s;
     }
 }
 
 .projectTwo,
 .projectThree {
   display: flex;
-  max-height: 400px;
+  position: relative;
+  height: 400px;
   justify-content: center;
-  padding: 2%;
-  width: 40%;
+  
+  width: 38%;
   img {
     width: 100%;
     object-fit: cover;
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   }
-  :focus,
-  :hover {
-    box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
-    transform: scale(1.015);
-    transition: ease-in-out 0.5s;
+}
+
+.overlay {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  color: white;
+  margin: 0 auto;
+  height: 400px;
+  padding: 5%;
+  opacity: 0;
+  transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  h4 {
+    color: white;
+  }
+  a {
+    text-transform: uppercase;
+    padding: 2% 5%;
+  }
+  .fa-times {
+    align-self: flex-end;
+    font-size: larger;
+  }
+  .fa-times:hover {
+    color: $gold;
   }
 }
 
-.overlayOne {
-  position: absolute;
+.linkBox {
+  margin: 5% 0%;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
 }
