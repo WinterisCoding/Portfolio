@@ -20,7 +20,6 @@
   width: 58%;
     img {
       width: 100%;
-      object-fit: cover;
       box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
     }
 }
@@ -31,11 +30,9 @@
   position: relative;
   height: 400px;
   justify-content: center;
-  
   width: 38%;
   img {
     width: 100%;
-    object-fit: cover;
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   }
 }
@@ -61,6 +58,7 @@
   a {
     text-transform: uppercase;
     padding: 2% 5%;
+    border: 1px solid aliceblue;
   }
   .fa-times {
     align-self: flex-end;
@@ -69,9 +67,13 @@
   .fa-times:hover {
     color: $gold;
   }
+  
 }
 
 .linkBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
   margin: 5% 0%;
 }
 

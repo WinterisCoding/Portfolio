@@ -14,30 +14,39 @@
   display: flex;
   flex-wrap: wrap;
   width: 60%;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
     .input {
-      width: 50%;
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2%;
       input{
-        width: 90%;
+        width: 100%;
         padding: 15px;
         border-style: none;
         border-bottom: 1px solid rgba(47, 79, 79, 0.356);
         background-color: rgb(235, 235, 235);
       };
-      label {
-        width: 25%;
-        text-align: left;
-      }
+    }
+    label {
+      width: 100%;
+      text-align: left;
+      padding: 1%;
+      font-size: .85rem;
+      color: $darkGreen;
     }
     textarea {
       width: 100%;
       height: 200px;
-      margin: 2% 2.5%;
       margin-bottom: 5%;
       resize: none;
       border-style: none;
       padding: 15px;
       background-color: rgb(235, 235, 235);
+    }
+    button {
+      margin: 0 auto;
     }
   }

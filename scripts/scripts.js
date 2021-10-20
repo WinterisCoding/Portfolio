@@ -33,7 +33,8 @@ portfolioApp.closeInfo = () => {
 portfolioApp.init = () => {
   portfolioApp.submitForm();
   portfolioApp.showInfo();
-  portfolioApp.closeInfo();
+  portfolioApp.closeInfo()
+  AOS.init();
 }
 
 portfolioApp.init()

@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="./styles/style.css">
 
@@ -34,9 +36,9 @@
         
         <div class="headerContent">
           <div class="headerText">
-            <h1>Hi! I'm Elisabeth Winter</h1>
+            <h1>Hello! I'm Elisabeth Winter</h1>
             <h2>Junior Front-End Developer</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ut iusto dolorem tempora explicabo enim modi facilis maxime ad blanditiis, dolores consequatur porro ex sapiente veniam laborum libero quam deleniti in. Ullam iste eveniet architecto quae quibusdam omnis maxime, totam ut at est harum sed quaerat animi, accusamus perferendis nemo.</p>
+            <p>A multidisiplinary developer with a passion for creating quality, accessible web experiences, looking for a place to grow!</p>
             <div class="linkContainer">
               <a href="https://github.com/WinterisCoding"><i class="fab fa-github"></i></a>
               <a href="https://www.linkedin.com/in/winteriscoding/"><i class="fab fa-linkedin"></i></a>
@@ -117,7 +119,8 @@
           <div class="aboutText">
             <h2>About Me</h2>
             <h4>Front-End Developer</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quod saepe pariatur nesciunt modi quasi, ea temporibus dolorum excepturi ab reprehenderit eveniet, necessitatibus numquam iste nobis ut rem, officiis culpa aliquam laborum eligendi consectetur incidunt corrupti? Sunt iste inventore, recusandae quo neque minus labore explicabo itaque ut est, repellendus tempore!</p>
+            <p>I am a recent graduate from <a href="www.junocollege.com">Juno College of Technology</a>'s Web Dev Bootcamp. I have a background in team management and love working with fellow creatives</p>
+            <p>When I'm not coding, you can usually find me crafting, reading, or replaying the Witcher. I'd love to talk books! Particularly SF/F I'm always looking to add to my TBR pile! </p>
             <div class="buttonContainer">
               <button>Contact</button>
               <button>Resume</button>
@@ -141,7 +144,7 @@
                 <a href="https://github.com/makeup-to-art/makeup-to-art">Repo</a>
               </div><!--end of linkBox-->
             </div><!-- end of overlayOne-->
-            <img class="projectImage" src="./assets/HueAreYou.PNG" alt="Hue Are You Project Displayed on Screen" tabindex="0">
+            <img class="projectImage" src="./assets/mediamodifier_image (2).png" alt="Hue Are You Project Displayed on Screen" tabindex="0">
           </li> <!--end of projectOne-->
           <li class="projectTwo">
             <div class="overlay">
@@ -154,7 +157,7 @@
                 <a href="https://github.com/WinterisCoding/Heros-Journey-App">Repo</a>
               </div><!--end of linkBox-->
             </div><!-- end of overlay-->
-            <img class="projectImage" src="./assets/HeroApp.PNG" alt="Hero's Journey App Displayed on Phone" tabindex="0">
+            <img class="projectImage" src="./assets/mediamodifier_image (1).png" alt="Hero's Journey App Displayed on Phone" tabindex="0">
           </li> <!--end of projectTwo-->
           <li class="projectThree">
             <div class="overlay">
@@ -167,7 +170,7 @@
                 <a href="https://github.com/Blueberry-Hamster-Organization/Pocket-Books-App">Repo</a>
               </div><!--end of linkBox-->
             </div><!-- end of overlay-->
-            <img class="projectImage" src="./assets/pocketBooks.PNG" alt="PocketBooks app Display on Tablet" tabindex="0">
+            <img class="projectImage" src="./assets/mediamodifier_image (3).png" alt="PocketBooks app Display on Tablet" tabindex="0">
           </li> <!--end of projectThree-->
           <li class="projectFour">
             <div class="overlay">
@@ -180,7 +183,7 @@
                 <a href="https://github.com/WinterisCoding/Planted-PSD-Conversion">Repo</a>
               </div><!--end of linkBox-->
             </div><!-- end of overlay-->
-            <img class="projectImage" src="./assets/planted.PNG" alt="Planeted Project displayed on Laptop" tabindex="0">
+            <img class="projectImage" src="./assets/mediamodifier_image (4).png" alt="Planeted Project displayed on Laptop" tabindex="0">
           </li> <!--end of projectFour-->
         </ul>     <!-- end of projectList-->
       </section> <!-- end of portfolio-->
@@ -212,13 +215,13 @@
         <form action="submit" class="contactForm">
           <div class="input">
             <label for="name">Please enter your name</label>
-            <input type="text" name="name" placeholder="Name*" required>
+            <input type="text" name="name" id="name" placeholder="Name*" required>
           </div>
           <div class="input">
             <label for="email">Please enter your Email Address</label>
-            <input type="email" name="email" placeholder="Email*" required>
+            <input type="email" id="email" name="email" placeholder="Email*" required>
           </div>
-          <label for="message" class="sr-only"></label>
+          <label for="message">Please leave a message</label>
           <textarea name="message" id="message" placeholder="Send me a message!" required></textarea>
           <button>Send Message</button>
         </form> <!--end of contactForm-->
@@ -255,8 +258,10 @@
       </div> <!-- end of footerContent-->
     </footer> <!-- end of footer-->
     
-    <script src="./scripts/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
     <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@elisabethwinter.writes","postsPerLine":3,"limit":3,"picture":"big","fields":["description","publishAt"],"ratio":"square"}})</script>
+    
+    <script src="./scripts/scripts.js"></script>
   </body> <!-- end of body-->
 </html>
