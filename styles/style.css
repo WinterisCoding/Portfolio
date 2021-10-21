@@ -723,6 +723,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+  padding: 0% 1%;
 }
 
 .projectOne,
@@ -1308,6 +1309,8 @@ footer {
 .projectTwo img,
 .projectThree img,
 .projectFour img {
+    width: 100%;
+    height: 400px;
     -o-object-fit: cover;
        object-fit: cover;
   }
