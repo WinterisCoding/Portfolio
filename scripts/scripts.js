@@ -28,30 +28,36 @@ portfolioApp.showInfo = () => {
     portfolioApp.projectButton[i].addEventListener('click', function(event){
       const button = event.target.parentNode;
       const project = button.parentNode;
-      const overlay = project.childNodes[1];
+      const overlay = project.childNodes[3];
       overlay.classList.add('active');
     })
   }
   for (let i =0; i < portfolioApp.projectButton.length; i++) {
     portfolioApp.projectButton[i].addEventListener('keydown', event => {
-      if (event.code == 'Space' || event.code == 'Enter') {
+      if (event.code == 'Space' || event.code == 'Enter'){
         const project = event.target.parentNode;
-        const overlay = project.childNodes[1];
-        overlay.classList.add('active')
+        const overlay = project.childNodes[3];
+        overlay.classList.add('active');
       }
     })
   }
 }
-
 
 portfolioApp.closeInfo = () => {
   for (let i = 0; i < portfolioApp.closeButton.length; i++){
     portfolioApp.closeButton[i].addEventListener('click', function(event){
       const project = event.target.parentNode;
       project.classList.remove('active');
-    });
+    })
   }
-}
+  for (let i = 0; i < portfolioApp.closeButton.length; i++){
+    portfolioApp.closeButton[i].addEventListener('keydown', event => {
+      if (event.code == 'Space' || event.code == 'Enter') {
+        const project = event.target.parentNode;
+      project.classList.remove('active');
+      }
+    })
+}}
 
 portfolioApp.init = () => {
   portfolioApp.showInfo();
