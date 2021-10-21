@@ -89,7 +89,7 @@
     margin: 0 auto;
   }
   .aboutText {
-    width: 100;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     padding: 2%;
@@ -117,6 +117,7 @@
   .bottomNavMenu {
     flex-wrap: wrap;
     height: 400px;
+    padding-bottom: 3%;
     li {
       width: 50%;
       align-items: center;

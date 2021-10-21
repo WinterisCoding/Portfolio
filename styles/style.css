@@ -281,6 +281,12 @@ p {
   margin: 2% 0%;
 }
 
+.stackUse {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #e3bd6a;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1196,7 +1202,7 @@ footer {
   }
 
   .aboutText {
-    width: 100;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     padding: 2%;
@@ -1233,6 +1239,7 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 400px;
+    padding-bottom: 3%;
   }
   .bottomNavMenu li {
     width: 50%;
