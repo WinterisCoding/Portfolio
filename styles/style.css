@@ -292,7 +292,7 @@ html {
 }
 
 body {
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -957,10 +957,6 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.testimonialsContainer blockquote:before,
-.testimonialsContainer blockquote:after {
-  content: '"';
-}
 
 .contact {
   display: -webkit-box;
@@ -1148,6 +1144,12 @@ footer {
   footer {
     margin: 0;
     padding: 1%;
+  }
+
+  blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 800px) {
