@@ -488,16 +488,12 @@ header {
   font-size: 1.3rem;
 }
 
-.mobileNav {
-  display: none;
-}
-.mobileNav input {
-  opacity: 0;
-}
-.mobileNav label {
+.mobileNav .menuOpen {
   position: absolute;
   top: 3%;
-  left: 90%;
+  left: 85%;
+  padding: 0;
+  background-color: transparent;
 }
 .mobileNav .bar {
   width: 30px;
@@ -506,13 +502,12 @@ header {
   margin: 6px;
 }
 
-.mobileNav label:hover .bar,
-.mobileNav label:focus .bar {
+.mobileNav button:hover .bar,
+.mobileNav button:focus .bar {
   background-color: #e3bd6a;
 }
 
 .navBarMobile {
-  opacity: 0;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,7 +526,6 @@ header {
   top: -3%;
   left: 0;
   width: 100vw;
-  height: 0;
   background-color: rgba(0, 0, 0, 0.95);
   z-index: 20;
   color: aliceblue;
@@ -548,6 +542,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: -3%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -570,10 +565,16 @@ header {
   right: 5%;
 }
 
-.mobileNav input:checked ~ .navBarMobile {
+.closed {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.open {
+  visibility: visible;
   opacity: 1;
-  width: 100vw;
-  height: 100vh;
+  height: 95vh;
 }
 
 .skillsContent {
@@ -695,6 +696,7 @@ header {
   margin-top: 2%;
   margin-bottom: 3%;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .projectList {
@@ -852,6 +854,15 @@ header {
 .overlay .fa-times:hover,
 .overlay .fa-times:focus {
   color: #e3bd6a;
+}
+
+.projectButton {
+  background-color: transparent;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
 }
 
 .linkBox {

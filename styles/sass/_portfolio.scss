@@ -2,6 +2,7 @@
   margin-top: 2%;
   margin-bottom: 3%;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .projectList {
@@ -112,7 +113,13 @@
   .fa-times:focus {
     color: $gold;
   }
-  
+}
+
+.projectButton {
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  border: none;
 }
 
 .linkBox {
