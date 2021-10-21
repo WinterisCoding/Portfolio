@@ -45,6 +45,11 @@ button:hover {
     color: $heroGreen;
 }
 
+.logo {
+  padding: .75% 2%;
+  border-radius: 0;
+}
+
 .redText {
   color: $redText;
   font-size: larger;

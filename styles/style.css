@@ -336,6 +336,11 @@ button:hover {
   color: #1c5c42;
 }
 
+.logo {
+  padding: 0.75% 2%;
+  border-radius: 0;
+}
+
 .redText {
   color: #ac1212;
   font-size: larger;
@@ -717,6 +722,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .projectOne,
@@ -1304,5 +1310,9 @@ footer {
 .projectFour img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .overlay a {
+    padding: 0;
   }
 }
