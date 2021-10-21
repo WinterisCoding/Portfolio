@@ -1297,4 +1297,12 @@ footer {
   .bottomNavMenu li {
     width: 100%;
   }
+
+  .projectOne,
+.projectTwo,
+.projectThree,
+.projectFour {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
