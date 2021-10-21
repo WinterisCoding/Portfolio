@@ -292,6 +292,7 @@ html {
 }
 
 body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -494,6 +495,9 @@ header {
   font-size: 1.3rem;
 }
 
+.mobileNav {
+  display: none;
+}
 .mobileNav .menuOpen {
   position: absolute;
   top: 3%;
@@ -702,7 +706,6 @@ header {
   margin-top: 2%;
   margin-bottom: 3%;
   text-align: center;
-  overflow-x: hidden;
 }
 
 .projectList {
@@ -949,7 +952,14 @@ header {
 }
 .testimonialsContainer img {
   border-radius: 50%;
-  width: 150px;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonialsContainer blockquote:before,
+.testimonialsContainer blockquote:after {
+  content: '"';
 }
 
 .contact {
@@ -1225,6 +1235,15 @@ footer {
 
   #medium-widget {
     width: 65%;
+  }
+
+  blockquote {
+    font-size: 1rem;
+  }
+
+  .testimonialsContainer img {
+    width: 100px;
+    height: 100px;
   }
 
   .contactForm {
