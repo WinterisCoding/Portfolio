@@ -33,20 +33,38 @@
             <li><a href="#contact">Contact</a></li>
           </ul> <!-- end of Nav Bar-->
         </nav> <!-- end of headerNav -->
+
+        <nav class='mobileNav'>
+          <input type="checkbox" id="menu_checkbox">
+            <label for="menu_checkbox" id="menu_label">
+              <div class="bar One"></div>
+              <div class="bar Two"></div>
+              <div class="bar Three"></div>
+          </label>
+          <ul class="navBarMobile">
+            <i class="fas fa-times menuClose"></i>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul> <!-- end of Nav Bar-->
+        </nav> <!--end of MobileNav-->
         
         <div class="headerContent">
-          <div class="headerText">
+          <div class="headerText" data-aos="fade-down" data-aos-delay="250">
             <h1>Hello! I'm Elisabeth Winter</h1>
             <h2>Junior Front-End Developer</h2>
-            <p>A multidisiplinary developer with a passion for creating quality, accessible web experiences, looking for a place to grow!</p>
+            <p>A multidisiplinary <span class="redText">developer</span> with a passion for creating quality, accessible web experiences,  <span class='redText'>looking for a place to grow!</span></p>
             <div class="linkContainer">
-              <a href="https://github.com/WinterisCoding"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/winteriscoding/"><i class="fab fa-linkedin"></i></a>
-              <a href="https://twitter.com/_WinterIsCoding"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/WinterisCoding">Github</a>
+              <a href="https://www.linkedin.com/in/winteriscoding/">LinkedIn</a>
+              <a href="https://twitter.com/_WinterIsCoding">Twitter</a>
+              <a href="https://calendly.com/winter-is-coding">Calendly</a>
             </div> <!--end of link container-->
           </div> <!-- end of headerText-->
   
-          <div class="headerPortrait">
+          <div class="headerPortrait" data-aos="fade-left" data-aos-delay="200">
             <img src="./assets/headerPortrait.svg" alt="Vector Drawing of Me! Elisabeth Winter">
           </div> <!-- end of headerPortrait-->
         </div> <!-- end of headerContent-->
@@ -56,9 +74,9 @@
 
     <main>
       <section class='skills'>
-        <div class="skillsContent wrapper">
+        <div class="skillsContent wrapper" >
           <h2>Skills</h2>
-          <ul class="iconList">
+          <ul class="iconList" data-aos="fade-up" data-aos-delay="100">
             <li class="iconContainer">
               <i class="fab fa-html5" aria-hidden="true"></i>
               <p>HTML 5</p>
@@ -113,17 +131,18 @@
 
       <section class="about" id="about">
         <div class="aboutContent wrapper">
-          <div class="aboutPortrait">
+          <div class="aboutPortrait" data-aos="zoom-in" data-aos-delay="300">
             <img src="./assets/headerPortrait.svg" alt="Vector Drawing of Elisabeth Winter, Again">
           </div> <!-- end of aboutPortrait-->
           <div class="aboutText">
             <h2>About Me</h2>
             <h4>Front-End Developer</h4>
-            <p>I am a recent graduate from <a href="www.junocollege.com">Juno College of Technology</a>'s Web Dev Bootcamp. I have a background in team management and love working with fellow creatives</p>
-            <p>When I'm not coding, you can usually find me crafting, reading, or replaying the Witcher. I'd love to talk books! Particularly SF/F I'm always looking to add to my TBR pile! </p>
+            <p>I am a recent graduate from <span class='redText'><a href="www.junocollege.com">Juno College of Technology</a></span>'s Web Dev Bootcamp. I have a background in team management & leadership and love working with <span class="redText">creative and diverse</span> co-workers!</p>
+            <p>When I'm not coding, you can usually find me crafting, reading, or replaying the Witcher. I'd love to talk books! Particularly SF/F; I'm always looking to add to my TBR pile! </p>
             <div class="buttonContainer">
-              <button>Contact</button>
-              <button>Resume</button>
+              <a href="#contact">Let's Chat!</a>
+              <a href="https://www.canva.com/design/DAEqISev18o/p7pt_OtnfNC4i0HCgzXrIA/view?utm_content=DAEqISev18o&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">View Resume</a>
+              <a href="./assets/Elisabeth-Winter-WebDev-Resume-2021.pdf" download="Elisabeth-Winter-WebDev-Resume-2021">Download Resume</a>
             </div> <!--end of buttonContainer-->
           </div> <!-- end of aboutText-->
         </div> <!-- end of aboutContent-->
@@ -133,7 +152,7 @@
         <h4>Creative</h4>
         <h2>Portfolio</h2>
         <ul class="projectList">
-          <li class="projectOne" >
+          <li class="projectOne" data-aos="fade-down" data-aos-delay="200">
             <div class="overlay">
               <i class="fas fa-times closeButton"></i>
               <h4>Hue are You?</h4>
@@ -146,7 +165,7 @@
             </div><!-- end of overlayOne-->
             <img class="projectImage" src="./assets/mediamodifier_image (2).png" alt="Hue Are You Project Displayed on Screen" tabindex="0">
           </li> <!--end of projectOne-->
-          <li class="projectTwo">
+          <li class="projectTwo" data-aos="fade-left" data-aos-delay="200">
             <div class="overlay">
               <i class="fas fa-times closeButton"></i>
               <h4>Hero's Journey</h4>
@@ -159,7 +178,7 @@
             </div><!-- end of overlay-->
             <img class="projectImage" src="./assets/mediamodifier_image (1).png" alt="Hero's Journey App Displayed on Phone" tabindex="0">
           </li> <!--end of projectTwo-->
-          <li class="projectThree">
+          <li class="projectThree" data-aos="fade-right" data-aos-delay="200">
             <div class="overlay">
               <i class="fas fa-times closeButton"></i>
               <h4>PocketBooks</h4>
@@ -172,7 +191,7 @@
             </div><!-- end of overlay-->
             <img class="projectImage" src="./assets/mediamodifier_image (3).png" alt="PocketBooks app Display on Tablet" tabindex="0">
           </li> <!--end of projectThree-->
-          <li class="projectFour">
+          <li class="projectFour" data-aos="fade-up" data-aos-delay="200">
             <div class="overlay">
               <i class="fas fa-times closeButton"></i>
               <h4>Planted</h4>
@@ -212,8 +231,9 @@
       <section class="contact wrapper" id="contact">
         <h4>Let's chat</h4>
         <h2>Get in Touch</h2>
-        <form action="submit" class="contactForm">
+        <form action="https://formsubmit.co/elisabethwinter.writes@gmail.com" method="POST" class="contactForm">
           <div class="input">
+            <input type="hidden" name="_next" value="https://winteriscoding.ca">
             <label for="name">Please enter your name</label>
             <input type="text" name="name" id="name" placeholder="Name*" required>
           </div>
@@ -230,12 +250,14 @@
       <nav class="bottomNav">
         <ul class="bottomNavMenu wrapper">
           <li>
-            <h3>Github</h3>
-            <a href="https://github.com/WinterisCoding">@WinterisCoding</a>
+            <h3>Code</h3>
+            <a href="https://github.com/WinterisCoding">GitHub</a>
+            <a href="https://codepen.io/winteriscoding">CodePen</a>
           </li>
           <li>
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/winteriscoding/">/in/winteriscoding</a>
+            <h3>Work</h3>
+            <a href="https://www.linkedin.com/in/winteriscoding/">LinkedIn</a>
+            <a href="https://calendly.com/winter-is-coding">Calendly</a>
           </li>
           <li>
             <h3>Reach Me</h3>

@@ -1,11 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
   letter-spacing: 2px;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: $gold;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 li {
@@ -13,26 +28,25 @@ li {
 }
 
 button {
-  border-style: none;
   background-color: $heroGreen;
-  border-radius: 25px;
-  padding: 12px 45px;
-  text-transform: uppercase;
-  color: aliceblue;
-  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
-  font-size: 1.2rem;
+    border: 2px solid $heroGreen;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 2% 6%;
+    transition: all .5s ease;
 }
 
 button:focus,
 button:hover {
-  box-shadow: rgba(149, 157, 165, 0.8) 0px 12px 30px;
-  transition: ease-in-out 0.5s;
+  background-color: $lighterGrey;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: 400;
+    color: $heroGreen;
 }
 
-.wrapper {
-  width: 90%;
-  max-width: 1440px;
-  margin: 0 auto;
+.redText {
+  color: $redText;
+  font-size: larger;
 }
 
 .hidden {

@@ -3,11 +3,15 @@ const portfolioApp = {};
 portfolioApp.form = document.querySelector('.contactForm');
 portfolioApp.projectImage = document.querySelectorAll('.projectImage')
 portfolioApp.closeButton = document.querySelectorAll('.fa-times')
+portfolioApp.closeMenu = document.querySelector('.menuClose')
+portfolioApp.openMenu = document.getElementById('menu_label')
 
-portfolioApp.submitForm = () => {
-  portfolioApp.form.addEventListener('submit', function(event){
-    event.preventDefault();
-    console.log('Its Working');
+portfolioApp.menuButton = () => {
+  portfolioApp.openMenu.addEventListener('click', () => {
+    console.log('its wirjk')
+  })
+  portfolioApp.closeMenu.addEventListener('click', () => {
+    document.getElementById('menu_checkbox').checked = false;
   })
 }
 
@@ -31,9 +35,9 @@ portfolioApp.closeInfo = () => {
 }
 
 portfolioApp.init = () => {
-  portfolioApp.submitForm();
   portfolioApp.showInfo();
-  portfolioApp.closeInfo()
+  portfolioApp.closeInfo();
+  portfolioApp.menuButton();
   AOS.init();
 }
 

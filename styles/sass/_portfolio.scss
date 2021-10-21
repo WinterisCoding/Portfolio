@@ -19,8 +19,17 @@
   margin-bottom: 40px;
   width: 58%;
     img {
+      object-fit: contain;
       width: 100%;
+      height: auto;
       box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+      transition-property: box-shadow;
+      transition-timing-function: ease;
+      transition-duration: .7s;
+    }
+    img:hover,
+    img:focus {
+      box-shadow: rgba(149, 157, 165, 0.8) 0px 8px 24px;
     }
 }
 
@@ -32,9 +41,18 @@
   justify-content: center;
   width: 38%;
   img {
+    object-fit: contain;
     width: 100%;
+    height: auto;
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    transition-property: box-shadow;
+    transition-timing-function: ease;
+    transition-duration: .7s;
   }
+  img:hover,
+  img:focus {
+      box-shadow: rgba(149, 157, 165, 0.8) 0px 8px 24px;
+    }
 }
 
 .overlay {
@@ -57,14 +75,41 @@
   }
   a {
     text-transform: uppercase;
-    padding: 2% 5%;
+    padding: 2% 7%;
     border: 1px solid aliceblue;
+    overflow: hidden;
+    position: relative;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
   }
+  a::after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 35px;
+    z-index: 10;
+  }
+  a:hover,
+  a:focus {
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+
   .fa-times {
     align-self: flex-end;
     font-size: larger;
   }
-  .fa-times:hover {
+  .fa-times:hover,
+  .fa-times:focus {
     color: $gold;
   }
   
