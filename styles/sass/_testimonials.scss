@@ -20,3 +20,69 @@
     object-fit: cover;
   };
 }
+
+// Slideshow Stylings
+
+.testimonyRadio {
+  display: nones;
+}
+
+.slideshowControl {
+  .control1 {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    text-align: center;
+
+    > label[class^="control"] {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 10px;
+      border-radius: 50%;
+      border: 1px solid #999;
+      background-color: #efefe8;
+      cursor: pointer;
+    }
+  }
+}
+
+.slideshowNav label {
+  display: none;
+  position: absolute;
+  top: 50%;
+  padding: 5px 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 24px;
+    background-color: #FFF;
+  }
+
+  &.left {
+    left: 20px;
+
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &.right {
+    right: 20px;
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+}
