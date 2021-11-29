@@ -23,7 +23,7 @@
     img {
       object-fit: contain;
       width: 100%;
-      height: auto;
+      height: 100%;
       box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
       transition-property: box-shadow;
       transition-timing-function: ease;
@@ -45,7 +45,7 @@
   img {
     object-fit: contain;
     width: 100%;
-    height: auto;
+    height: 100%;
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
     transition-property: box-shadow;
     transition-timing-function: ease;
