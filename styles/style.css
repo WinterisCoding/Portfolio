@@ -744,7 +744,7 @@ header {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
-  height: auto;
+  height: 100%;
   -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   -webkit-transition-property: -webkit-box-shadow;
@@ -781,7 +781,7 @@ header {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
-  height: auto;
+  height: 100%;
   -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   -webkit-transition-property: -webkit-box-shadow;
@@ -879,6 +879,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   border: none;
+  width: 100%;
 }
 
 .linkBox {
