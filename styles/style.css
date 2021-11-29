@@ -965,6 +965,66 @@ header {
      object-fit: cover;
 }
 
+.testimonyRadio {
+  display: none;
+}
+
+.slideshowControl .control1 {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  text-align: center;
+}
+.slideshowControl .control1 > label[class^=control] {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  background-color: #efefe8;
+  cursor: pointer;
+}
+
+.slideshowNav label {
+  display: none;
+  position: absolute;
+  top: 50%;
+  padding: 5px 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+.slideshowNav label::before, .slideshowNav label::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 24px;
+  background-color: #FFF;
+}
+.slideshowNav label.left {
+  left: 20px;
+}
+.slideshowNav label.left::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.slideshowNav label.left::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.slideshowNav label.right {
+  right: 20px;
+}
+.slideshowNav label.right::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.slideshowNav label.right::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;

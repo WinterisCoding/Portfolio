@@ -23,8 +23,11 @@
 
 // Slideshow Stylings
 
+$slider-speed: 1s;
+$slider-number: 5;
+
 .testimonyRadio {
-  display: nones;
+  display: none;
 }
 
 .slideshowControl {
