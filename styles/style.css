@@ -974,8 +974,7 @@ header {
 
 .s-wrap {
   width: 100%;
-  margin-bottom: 50px;
-  padding-bottom: 55%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -985,26 +984,35 @@ header {
   padding: 0;
   width: 400%;
   height: 100%;
+  font-size: 0;
+  list-style: none;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .testimonyPost {
   display: inline-block;
   position: relative;
   top: 0;
-  left: -10%;
+  left: 0;
+  padding: 0% 2%;
   width: 25%;
   height: 100%;
-  margin: 0px 50px;
-  padding: 0% 2%;
 }
 
 .testimonialsContainer .slideshowControl {
   position: absolute;
   bottom: 18px;
-  left: 44%;
+  left: 50%;
   text-align: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
-.testimonialsContainer .slideshowControl > label[class^=control] {
+.testimonialsContainer .slideshowControl > label[class^=s-c-] {
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -1014,8 +1022,7 @@ header {
   background-color: #efefe8;
   cursor: pointer;
 }
-
-.slideshowNav label {
+.testimonialsContainer .slideshowNav label {
   display: none;
   position: absolute;
   top: 50%;
@@ -1024,69 +1031,76 @@ header {
           transform: translateY(-50%);
   cursor: pointer;
 }
-.slideshowNav label::before, .slideshowNav label::after {
+.testimonialsContainer .slideshowNav label::before, .testimonialsContainer .slideshowNav label::after {
   content: "";
   display: block;
   width: 8px;
   height: 24px;
   background-color: #FFF;
 }
-.slideshowNav label::before {
+.testimonialsContainer .slideshowNav label::before {
   margin-bottom: -12px;
 }
-.slideshowNav label.left {
-  left: 20px;
+.testimonialsContainer .slideshowNav label.left {
+  left: 80px;
 }
-.slideshowNav label.left::before {
+.testimonialsContainer .slideshowNav label.left::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.slideshowNav label.left::after {
+.testimonialsContainer .slideshowNav label.left::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.slideshowNav label.right {
-  right: 20px;
+.testimonialsContainer .slideshowNav label.right {
+  right: 80px;
 }
-.slideshowNav label.right::before {
+.testimonialsContainer .slideshowNav label.right::before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.slideshowNav label.right::after {
+.testimonialsContainer .slideshowNav label.right::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-
-#s-1:checked ~ .testimonyList {
+.testimonialsContainer #s-1:checked ~ .testimonyList {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
-#s-1:checked ~ .slideshowControl .control1 {
+.testimonialsContainer #s-1:checked ~ .slideshowControl .s-c-1 {
   background-color: #333;
 }
-#s-1:checked ~ .slideshowNav .slideNav1 {
+.testimonialsContainer #s-1:checked ~ .slideshowNav .s-nav-1 {
   display: block;
 }
-
-#s-2:checked ~ .testimonyList {
+.testimonialsContainer #s-2:checked ~ .testimonyList {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
 }
-#s-2:checked ~ .slideshowControl .control2 {
+.testimonialsContainer #s-2:checked ~ .slideshowControl .s-c-2 {
   background-color: #333;
 }
-#s-2:checked ~ .slideshowNav .slideNav2 {
+.testimonialsContainer #s-2:checked ~ .slideshowNav .s-nav-2 {
   display: block;
 }
-
-#s-3:checked ~ .testimonyList {
+.testimonialsContainer #s-3:checked ~ .testimonyList {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-#s-3:checked ~ .slideshowControl .control3 {
+.testimonialsContainer #s-3:checked ~ .slideshowControl .s-c-3 {
   background-color: #333;
 }
-#s-3:checked ~ .slideshowNav .slideNav3 {
+.testimonialsContainer #s-3:checked ~ .slideshowNav .s-nav-3 {
+  display: block;
+}
+.testimonialsContainer #s-4:checked ~ .testimonyList {
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
+}
+.testimonialsContainer #s-4:checked ~ .slideshowControl .s-c-4 {
+  background-color: #333;
+}
+.testimonialsContainer #s-4:checked ~ .slideshowNav .s-nav-4 {
   display: block;
 }
 

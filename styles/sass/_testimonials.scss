@@ -35,8 +35,9 @@ $slider-width: 100% / $slider-number;
 
 .s-wrap {
   width: 100%;
-  margin-bottom: 50px;
-  padding-bottom: 55%;
+  height: 100%;
+  // margin-bottom: 50px;
+  // padding-bottom: 55%;
   position: relative;
   overflow: hidden;
 }
@@ -53,25 +54,24 @@ $slider-width: 100% / $slider-number;
 
 .testimonyPost {
   display: inline-block;
-position: relative;
-top: 0;
-left: -10%;
-width: 25%;
-height: 100%;
-margin: 0px 50px;
-padding: 0% 2%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0% 2%;
+  width: $slider-width;
+  height: 100%;
 }
 
 .testimonialsContainer {
   .slideshowControl {
     position: absolute;
     bottom: 18px;
-    left: 44%;
+    left: 50%;
     text-align: center;
     transform: translateX(-50%);
     transition-timing-function: ease-out;
 
-    > label[class^="control"] {
+    > label[class^="s-c-"] {
       display: inline-block;
       width: 12px;
       height: 12px;
@@ -82,7 +82,6 @@ padding: 0% 2%;
       cursor: pointer;
     }
   }
-
 
 .slideshowNav label {
   display: none;
@@ -104,7 +103,7 @@ padding: 0% 2%;
   &::before {margin-bottom: -12px;}
 
   &.left {
-    left: 20px;
+    left: 80px;
 
     &::before {
       transform: rotate(45deg);
@@ -115,7 +114,7 @@ padding: 0% 2%;
   }
 
   &.right {
-    right: 20px;
+    right: 80px;
 
     &::before {
       transform: rotate(-45deg);
@@ -125,33 +124,15 @@ padding: 0% 2%;
     }
   }
 }
-
-@for $i from 1 to $slider-number {
+@for $i from 1 through $slider-number {
   #s-#{$i}:checked {
     & ~ .testimonyList {transform: translateX(-$slider-width * ($i - 1));}
 
-    & ~ .slideshowControl .control#{$i} {background-color: #333;}
+    & ~ .slideshowControl .s-c-#{$i} {background-color: #333;}
 
-    & ~ .slideshowNav .slideNav#{$i} {display: block;}
+    & ~ .slideshowNav .s-nav-#{$i} {display: block;}
   }
 }
 
-@keyframes slider-animation {
-  $i: 0;
-  $j: 0;
-  $times: ($slider-number - 1) * 2;
-  @while $i < 100 {
-    #{$i},
-    #{$i + 7} {
-      @if $i < 50 {
-        transform: translateX(-$slider-width * $j);
-      } @else {
-        transform: translateX(-$slider-width * ($times - $j));
-      }
-    }
 
-    $i: $i + 100 / $times;
-    $j: $j + 1;
-  }
-}
 }
