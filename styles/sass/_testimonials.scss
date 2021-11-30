@@ -11,12 +11,128 @@
 .testimonialsContainer {
   text-align: center;
   padding: 2%;
+  height: 100%;
   color: white;
   font-size: 2rem;
+  position: relative;
   img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 125px;
+    height: 125px;
     object-fit: cover;
   };
+}
+
+// Slideshow Stylings
+
+$slider-speed: 1s;
+$slider-number: 4;
+$slider-width: 100% / $slider-number;
+
+.testimonyRadio {
+  display: none;
+}
+
+.s-wrap {
+  width: 100%;
+  height: 100%;
+  // margin-bottom: 50px;
+  // padding-bottom: 55%;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonyList {
+  margin: 0;
+  padding: 0;
+  width: 100% * $slider-number;
+  height: 100%;
+  font-size: 0;
+  list-style: none;
+  transition: transform $slider-speed;
+}
+
+.testimonyPost {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0% 2%;
+  width: $slider-width;
+  height: 100%;
+}
+
+.testimonialsContainer {
+  .slideshowControl {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    transition-timing-function: ease-out;
+
+    > label[class^="s-c-"] {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 10px;
+      border-radius: 50%;
+      border: 1px solid #999;
+      background-color: #efefe8;
+      cursor: pointer;
+    }
+  }
+
+.slideshowNav label {
+  display: none;
+  position: absolute;
+  top: 50%;
+  padding: 5px 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 24px;
+    background-color: #FFF;
+  }
+
+  &::before {margin-bottom: -12px;}
+
+  &.left {
+    left: 80px;
+
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &.right {
+    right: 80px;
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+}
+@for $i from 1 through $slider-number {
+  #s-#{$i}:checked {
+    & ~ .testimonyList {transform: translateX(-$slider-width * ($i - 1));}
+
+    & ~ .slideshowControl .s-c-#{$i} {background-color: #333;}
+
+    & ~ .slideshowNav .s-nav-#{$i} {display: block;}
+  }
+}
+
+
 }
